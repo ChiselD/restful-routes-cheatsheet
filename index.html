@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RESTful routes</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="container">
+		
+		<header>
+			<h1>RESTful Routes</h1>
+			<h2>A table of all 7 RESTful routes</h2>
+		</header>
+
+		<section>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Path</th>
+						<th>HTTP Verb</th>
+						<th>Purpose</th>
+						<th>Mongoose Method</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Index</td>
+						<td>/dogs</td>
+						<td>GET</td>
+						<td>List all dogs</td>
+						<td>Dog.find()</td>
+					</tr>
+					<tr class="crud-c">
+						<td>New</td>
+						<td>/dogs/new</td>
+						<td>GET</td>
+						<td>Show new dog form</td>
+						<td>n/a</td>
+					</tr>
+					<tr class="crud-c">
+						<td>Create</td>
+						<td>/dogs</td>
+						<td>POST</td>
+						<td>Create a new dog, then redirect somewhere</td>
+						<td>Dog.create()</td>
+					</tr>
+					<tr class="crud-r">
+						<td>Show</td>
+						<td>/dogs/:id</td>
+						<td>GET</td>
+						<td>Show info about one specific dog</td>
+						<td>Dog.findById()</td>
+					</tr>
+					<tr class="crud-u">
+						<td>Edit</td>
+						<td>/dogs/:id/edit</td>
+						<td>GET</td>
+						<td>Show edit form for one dog</td>
+						<td>Dog.findById()</td>
+					</tr>
+					<tr class="crud-u">
+						<td>Update</td>
+						<td>/dogs/:id</td>
+						<td>PUT</td>
+						<td>Update a particular dog, then redirect somewhere</td>
+						<td>Dog.findByIdAndUpdate()</td>
+					</tr>
+					<tr class="crud-d">
+						<td>Destroy</td>
+						<td>/dogs/:id</td>
+						<td>DELETE</td>
+						<td>Delete a particular dog, then redirect somewhere</td>
+						<td>Dog.findByIdAndRemove()</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+	</div>
+
+</body>
+</html>
