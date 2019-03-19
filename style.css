@@ -55,4 +55,9 @@ th, td {
 	opacity: 1;
 }*/
 
+html {
+	visibility: visible;
+	opacity: 1;
+}
+
 ===================
